@@ -17,6 +17,7 @@
 # in your analysis file, save the code to generate each graph using pryr::%<a-%{} 
 library(pryr)
 
+# example:
 mygraph1 %<a-% {
   hist(rnorm(1000,10,2), breaks=20)
 }
