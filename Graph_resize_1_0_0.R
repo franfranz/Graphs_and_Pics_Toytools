@@ -39,7 +39,7 @@ graphlist=complete_graphlist[c(1,3)]
 # 
 
 # this is the folder to save graphics to
-graphwd= ("C:\\Data\\LAMS unified\\Results\\LAMS_graphics")
+graphwd= "PATH"
 
 # set directory 
 setwd(graphwd)
