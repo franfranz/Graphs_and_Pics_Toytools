@@ -48,7 +48,7 @@ setwd(graphwd)
 
 # INPUT REQUIRED: choose graphical settings:
 #
-# size of output images: uncoment your preferred 
+# size of output images: uncomment your preference 
 
 imagesize= "small" # gset1, for small, low-quality portable images
 #imagesize= "medium" # gset2, average 
@@ -88,21 +88,24 @@ if (imagesize=="small"){
   g_res= g1_res
   rescom=rescom1
   resext=resext_1
-}else if (imagesize=="medium") {
+} else if (imagesize=="medium") {
   g_width=  g2_width
   g_height= g2_height 
   g_pointsize= g2_pointsize 
   g_res= g2_res
   rescom=rescom2
   resext=resext_2
-} else {
+} else if (imagesize=="big") {
   g_width=  g3_width
   g_height= g3_height 
   g_pointsize= g3_pointsize 
   g_res= g3_res
   rescom=rescom3
   resext=resext_3
-}  
+} else {
+  print("please select image size - line 53-55)")
+}
+    
 
 # save all graphs as images
 for (eachgraph in graphlist) {
