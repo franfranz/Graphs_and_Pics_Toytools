@@ -1,4 +1,4 @@
-# Graphs_and_pics_toytools
+# Graphs_and_Pics_Toytools
 Some scripts to quickly adapt plots and figures to different media and design some cool images such as posters and pic grids
 
 ## Contents 
