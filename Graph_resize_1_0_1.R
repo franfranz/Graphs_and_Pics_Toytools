@@ -103,7 +103,7 @@ if (imagesize=="small"){
   rescom=rescom3
   resext=resext_3
 } else {
-  print("please select image size - line 53-55)")
+  print("please select image size - line 53-55")
 }
     
 
