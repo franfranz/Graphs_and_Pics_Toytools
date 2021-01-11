@@ -110,7 +110,7 @@ if (imagesize=="small"){
 # save all graphs as images
 for (eachgraph in graphlist) {
   thename=as.character(eachgraph)
-  thefilename=paste0(thename, resext_1)
+  thefilename=paste0(thename, resext)
   rescom(filename=thefilename, 
          type=g_type, 
          units=g_units, 
@@ -125,7 +125,7 @@ for (eachgraph in graphlist) {
 
 # save one of the graphs: "mygraph2"
   # thename="mygraph2"
-  # thefilename=paste0(thename, resext_1)
+  # thefilename=paste0(thename, resext)
   # rescom(filename=thefilename, 
   #        type=g_type, 
   #        units=g_units, 
