@@ -3,7 +3,7 @@
 ###                                  
 #   ####     Adapt baseR graphs to different print formats           
 #   #          
-    ###      v 1.0.1
+    ###      v 1.0.2
     #              
     #        https://github.com/franfranz/Graphs_and_pics_toytools                                
 
