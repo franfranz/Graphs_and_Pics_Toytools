@@ -1,12 +1,12 @@
-####                                                   
+####                                                 
 #                                                     
-###         G R A P H I C S    for Secret Language Podcast Series                      
-#                                         
-# ####                  
-  #                                      v 1.1.0  
-  ###      
-  #         https://github.com/franfranz/Graphs_and_Pics_Toytools/new/main
-  #        
+###         P O S T E R   and   T H U M B N A I L                       
+#                                           
+# ####              G R A P H I C S  for  E V E N T S    
+  #                                       
+  ###        P T G E   -   v 1.1.0
+  #         
+  #        https://github.com/franfranz/Graphs_and_Pics_Toytools/new/main
 
 # this code prepares thumbnails and/or posters for series of events
 #
