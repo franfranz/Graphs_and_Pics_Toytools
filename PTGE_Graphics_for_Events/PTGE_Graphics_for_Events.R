@@ -25,11 +25,13 @@
 
 # 1) please input the name of the csv table containing names and titles
 # the file must have the following columns: "Name", "Surname", "Full_title", "Titleline_1", "Titleline_2", "Titleline_3", "Series"
+# a sample is provided in this repo
 
 titlefiles="Conf_titles_1.csv"
+csvsep=";" #type of separator in your csv file
 
 # 2) #please input the name of image to be used as background
-bg_imagetitle="Haeckel_Lichenes.jpg" #
+bg_imagetitle="Haeckel_Lichenes.jpg" # Ernst Haeckel, Public domain, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Haeckel_Lichenes.jpg
 
 
 # image equalization and color parameters
@@ -141,7 +143,7 @@ credits_to="Organized by \n Person One \n Person Two \n and Person Three"
 # the grid of cut images (square)
 # the poster of the series
 
-# where the SL logo is stored
+# where your logo is stored
 logowd=("path")
 
 # set input wd - where the source images are stored
@@ -174,7 +176,7 @@ library(imager)
 
 # import file with names
 setwd(inwd_titles)
-conftitles= read.csv(titlefiles, sep=";", header = T)
+conftitles= read.csv(titlefiles, sep=csvsep, header = T)
 
 if(nrow(conftitles==12)){
   typeimg="4x3"   
@@ -207,7 +209,7 @@ dim(background)
 backg_width= width(background)
 backg_height= height(background)
 
-#width must be cut in 3
+#width will be cut in 3 
 wideas=backg_width%/% 3
 wideas2= wideas*3
 backg_width==wideas2
