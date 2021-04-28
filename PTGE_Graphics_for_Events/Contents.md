@@ -1,4 +1,4 @@
-##Contents
+## Contents
 
 * [PTGE - Graphics for Events](https://github.com/franfranz/Graphs_and_Pics_Toytools/blob/main/PTGE_Graphics_for_Events/PTGE_Graphics_for_Events.R) v.1.1.0 - Code to prepare thumbnails and/or posters for series of events.
 * Conftitles.csv - Sample input file with the titles of a series of events. 
