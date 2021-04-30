@@ -4,7 +4,7 @@
 #                                           
 # ####              G R A P H I C S  for  E V E N T S    
   #                                       
-  ###        P T G E   -   v 1.1.0
+  ###        P T G E   -   v 1.1.1
   #         
   #        https://github.com/franfranz/Graphs_and_Pics_Toytools/new/main
 
@@ -25,14 +25,50 @@
 
 # 1) please input the name of the csv table containing names and titles
 # the file must have the following columns: "Name", "Surname", "Full_title", "Titleline_1", "Titleline_2", "Titleline_3", "Series"
+# 9 or 12 rows for 3x3 or 3x4 thumbnails
 # a sample is provided in this repo
 
 titlefiles="Conf_titles_1.csv"
 csvsep=";" #type of separator in your csv file
 
-# 2) #please input the name of image to be used as background
+# 2) #please input the filename of image to be used as background
 bg_imagetitle="Haeckel_Lichenes.jpg" # Ernst Haeckel, Public domain, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Haeckel_Lichenes.jpg
 
+# 3) #please input the filename of your logo 
+logofigure="mylogo.png"
+
+# input additional information about the organization 
+address= "@theplace" #a website or address of the event
+descr="A catchy \n description"
+credits_to="Organized by \n Person One \n Person Two \n and Person Three"
+
+# INPUT PATHS
+
+# the INPUT directory must contain:
+# the csv file with the information about the event (speaker, title, etc...)
+# the image to be used 
+
+# the MIDPROCESS directory will contain:
+# half processed (cut) pictures, to annotate with text
+
+# the OUTPUT directory will contain
+# the grid of cut images (square)
+# the poster of the series
+
+# where your logo is stored
+logowd=("path")
+
+# set input wd - where the source images are stored
+inwd_pic="path"
+
+# where the conference titles are stores
+inwd_titles="path"
+
+# set midprocess wd 
+midwd="path"
+
+# set output wd - where the output images are saved. Change according to type, if needed
+outwd="path"
 
 # image equalization and color parameters
 ##
@@ -128,51 +164,18 @@ text1_spacing_pos=1.1
 text2_spacing_pos=1.2  
 
 pos_width ="1200" #the width of the poster, in px
-address= "@theplace" #a website or address of the event
-descr="A catchy \n description"
-credits_to="Organized by \n Person One \n Person Two \n and Person Three"
 
-# the INPUT directory must contain:
-# the csv file with the information about the event (speaker, title, etc...)
-# the image to be used 
-
-# the MIDPROCESS directory will contain:
-# half processed (cut) pictures, to annotate with text
-
-# the OUTPUT directory will contain
-# the grid of cut images (square)
-# the poster of the series
-
-# where your logo is stored
-logowd=("path")
-
-# set input wd - where the source images are stored
-inwd_pic="path"
-
-# where the conference titles are stores
-inwd_titles="path"
-
-# set midprocess wd 
-midwd="path"
-
-# set output wd - where the output images are saved. Change according to type, if needed
-outwd="path"
-
-# input your organization logo
-setwd(logowd)
-granate_logo=image_read("mylogo.png")
-black_logo=image_read("mylogo_black.png")
-white_logo=image_negate(black_logo)
-redlum_logo=image_modulate(white_logo, brightness = 70) 
-seclogo=redlum_logo
-
-#
+#   proceed with image preparation
+#   
 # 
-# --
-
 
 library(magick)
 library(imager)
+
+# input your organization logo
+setwd(logowd)
+mylogo=image_read(logofigure)
+seclogo=mylogo
 
 # import file with names
 setwd(inwd_titles)
