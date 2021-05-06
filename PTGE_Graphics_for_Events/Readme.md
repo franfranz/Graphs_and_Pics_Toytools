@@ -6,6 +6,6 @@
 
 ## How to use this code 
 * Set your input files (31-38): your background image, your logo image, your list of contributors (you can insert it in the "Conftitles.csv" provided here)
-* Insert organizer details as you wish (41-43)
+* Insert organizer details (41-43)
 * Set your input paths (59-71)
 * The default values provided for image and text features for thumbnails (73-126) and posters (130-166) are fully customizable.  
