@@ -6,4 +6,4 @@ Some scripts to quickly adapt plots and figures to different media and design so
 
 * [PTGE - Poster and Thumbnail Graphics for Events](/PTGE_Graphics_for_Events). 
 
-* [Faux_Anaglyph_Text](/Faux_Anaglyph_Text.R) Add depth to your deepities with no effort, using this code to draw text resembling anaglyph effect. 
+* [Faux Anaglyph - Text](/Faux_Anaglyph_Text.R) Add depth to your headline deepities with no effort, using this code to draw text resembling anaglyph effect. 
