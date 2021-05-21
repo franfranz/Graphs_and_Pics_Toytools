@@ -6,7 +6,7 @@
   #                                       
   ###        P T G E   -   v 1.1.1
   #         
-  #        https://github.com/franfranz/Graphs_and_Pics_Toytools/new/main
+  #        https://github.com/franfranz/Graphs_and_Pics_Toytools/tree/main/PTGE_Graphics_for_Events
 
 # this code prepares thumbnails and/or posters for series of events
 #
